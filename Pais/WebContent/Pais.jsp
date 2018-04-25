@@ -54,7 +54,7 @@
 		<hr />
 		<div id="actions" class="row">
 			<div class="col-md-12">
-				<a href="index.html" class="btn btn-default">Voltar</a>
+				<a href="index.jsp" class="btn btn-default">Voltar</a>
 			</div>
 		</div>
 	</div>
