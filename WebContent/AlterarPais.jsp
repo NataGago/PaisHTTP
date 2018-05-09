@@ -33,12 +33,12 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="populacao">População</label>
-                                <input type="text" class="form-control" name="populacao" id="populacao" maxlength="15" placeholder="Populacao do Pais" value="${pais.populacao}">
+                                <input type="text" class="form-control" name="populacao" id="populacao" maxlength="15" placeholder="Populacao do Pais" value="${pais.populacao }">
                             </div>
 
                             <div class="form-group col-md-6">
                                 <label for="area">Área</label>
-                                <input type="text" class="form-control" name="area" id="area" required maxlength="60" placeholder="Área do País" value="${pais.area}">
+                                <input type="text" class="form-control" name="area" id="area" required maxlength="60" placeholder="Área do País" value="${pais.area }">
                             </div>
                         </div>
                         <hr/>
