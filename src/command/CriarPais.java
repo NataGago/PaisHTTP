@@ -20,10 +20,14 @@ public class CriarPais implements Command {
 		request.setCharacterEncoding("UTF-8");
     	String pId = request.getParameter("id");
 		String pNome = request.getParameter("nome");
-		long pPopulacao = Long.parseLong(request.getParameter("populacao"));
-		double pArea = Double.parseDouble(request.getParameter("area"));
+		String pPopulacao = request.getParameter("populacao");
+		String pArea = request.getParameter("area");
 		int id = -1;
+		long populacao = 0;
+		double area = 0.0;
 		try {
+			populacao = Long.parseLong(pPopulacao);
+			area = Double.parseDouble(pArea);
 			id = Integer.parseInt(pId);
 		} catch (NumberFormatException e) {
 
@@ -33,8 +37,8 @@ public class CriarPais implements Command {
 		Pais pais = new Pais();
 		pais.setId(id);
 		pais.setNome(pNome);
-		pais.setPopulacao(pPopulacao);
-		pais.setArea(pArea);
+		pais.setPopulacao(populacao);
+		pais.setArea(area);
 		
 		//instanciar o service
 		PaisService ps = new PaisService();

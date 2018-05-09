@@ -44,7 +44,7 @@
                         <hr/>
                         <div id="actions" class="row">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary" name="command" value="Alterar">Salvar</button>
+                                <button type="submit" class="btn btn-primary" name="command" value="AlterarPais">Salvar</button>
                                 <a href="ListarPaises.jsp" class="btn btn-default">Cancelar</a>
                             </div>
                         </div>

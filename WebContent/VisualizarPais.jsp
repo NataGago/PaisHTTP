@@ -32,8 +32,7 @@
 				<div class="modal-footer">
 					<form action="controller.do" method="post">
 						<input type="hidden" name="id" value="${pais.id }" />
-						<button type="submit" class="btn btn-primary" name="acao"
-							value="Excluir">Sim</button>
+						<button type="submit" class="btn btn-primary" name="command" value="ExcluirPais">Sim</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
 					</form>
 				</div>
@@ -71,10 +70,8 @@
 		<hr />
 		<div id="actions" class="row">
 			<div class="col-md-12">
-				<a href="controller.do?command=EditarCliente&id=${pais.id }"
-					class="btn btn-primary">Editar</a> 
-					<a href="#" class="btn btn-danger" data-toggle="modal"
-					data-target="#delete-modal">Excluir</a> 
+				<a href="controller.do?command=EditarCliente&id=${pais.id }" class="btn btn-primary">Editar</a> 
+					<a href="#" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">Excluir</a> 
 					<a href="ListarPaises.jsp" class="btn btn-default">Voltar</a>
 			</div>
 		</div>

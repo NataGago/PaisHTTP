@@ -32,7 +32,7 @@
 				<div class="modal-footer">
 					<form action="controller.do" method="post">
 						<input type="hidden" name="id" id="id_excluir" />
-						<button type="submit" class="btn btn-primary" name="command" value="Excluir">Sim</button>
+						<button type="submit" class="btn btn-primary" name="command" value="ExcluirPais">Sim</button>
 						<button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
 					</form>
 				</div>
@@ -54,7 +54,7 @@
 					<div class="input-group h2">
 						<input name="data[search]" class="form-control" id="search" type="text"	placeholder="Pesquisar Paises (deixe vazio para trazer todos)">
 						<span class="input-group-btn">
-							<button class="btn btn-primary" type="submit" name="command" value="buscar">
+							<button class="btn btn-primary" type="submit" name="command" value="ListarPaisesBuscar">
 								<span class="glyphicon glyphicon-search"></span>
 							</button>
 						</span>
@@ -89,8 +89,8 @@
 									<td>${pais.nome}</td>
 									<td>${pais.populacao}</td>
 									<td>${pais.area}</td>
-									<td class="actions"><a class="btn btn-success btn-xs"
-										href="controller.do?command=VisualizarPais&id=${pais.id }">Visualizar</a>
+									<td class="actions">
+										<a class="btn btn-success btn-xs" href="controller.do?command=VisualizarPais&id=${pais.id }">Visualizar</a>
 										<a class="btn btn-warning btn-xs" href="controller.do?command=EditarPais&id=${pais.id }">Editar</a>
 										<button id="btn${pais.id }%>" type="button"	class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-cliente="${pais.id }">Excluir</button>
 									</td>
@@ -126,7 +126,7 @@
 	<script type="text/javascript">
 		$("#delete-modal").on('show.bs.modal', function(event) {
 			var button = $(event.relatedTarget); //botao que disparou a modal
-			var recipient = button.data('cliente');
+			var recipient = button.data('pais');
 			$("#id_excluir").val(recipient);
 		});
 	</script>
