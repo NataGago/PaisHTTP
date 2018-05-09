@@ -30,7 +30,7 @@
 				<div class="modal-body">Deseja realmente excluir este Pais?
 				</div>
 				<div class="modal-footer">
-					<form action="ManterPais.do" method="post">
+					<form action="controller.do" method="post">
 						<input type="hidden" name="id" value="${pais.id }" />
 						<button type="submit" class="btn btn-primary" name="acao"
 							value="Excluir">Sim</button>
@@ -71,11 +71,11 @@
 		<hr />
 		<div id="actions" class="row">
 			<div class="col-md-12">
-				<a href="ManterPais.do?acao=Editar&id=${pais.id }"
-					class="btn btn-primary">Editar</a> <a href="#"
-					class="btn btn-danger" data-toggle="modal"
-					data-target="#delete-modal">Excluir</a> <a
-					href="ListarPaises.jsp" class="btn btn-default">Voltar</a>
+				<a href="controller.do?command=EditarCliente&id=${pais.id }"
+					class="btn btn-primary">Editar</a> 
+					<a href="#" class="btn btn-danger" data-toggle="modal"
+					data-target="#delete-modal">Excluir</a> 
+					<a href="ListarPaises.jsp" class="btn btn-default">Voltar</a>
 			</div>
 		</div>
 	</div>
