@@ -90,7 +90,7 @@
 									<td class="actions">
 										<a class="btn btn-success btn-xs" href="controller.do?command=VisualizarPais&id=${pais.id }">Visualizar</a>
 										<a class="btn btn-warning btn-xs" href="controller.do?command=EditarPais&id=${pais.id }">Editar</a>
-										<button id="btn${pais.id }%>" type="button"	class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-cliente="${pais.id }">Excluir</button>
+										<button id="btn${pais.id }>" type="button"	class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-pais="${pais.id }">Excluir</button>
 									</td>
 								</tr>
 							</c:forEach>

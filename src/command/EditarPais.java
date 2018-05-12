@@ -26,9 +26,9 @@ public class EditarPais implements Command {
 		long populacao = 0;
 		double area = 0.0;
 		try {
+			id = Integer.parseInt(pId);
 			populacao = Long.parseLong(pPopulacao);
 			area = Double.parseDouble(pArea);
-			id = Integer.parseInt(pId);
 		} catch (NumberFormatException e) {
 
 		}
